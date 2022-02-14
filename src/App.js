@@ -19,7 +19,7 @@ function App() {
     synopsis: "",
     title_english: "",
     torrents: [],
-    background_image: "",
+    large_cover_image: "",
   });
   const handleChange = (e) => {
     console.log("value value", e.target.value);

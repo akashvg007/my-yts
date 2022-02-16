@@ -2,7 +2,7 @@ import React from "react";
 import "./CustBtn.css";
 import Btn from "@mui/material/Button";
 
-export const Button = ({ btns }) => {
+export const Button = ({ btns, mode = 0 }) => {
   return (
     <div className="container">
       {btns.map((b) => {
@@ -11,6 +11,7 @@ export const Button = ({ btns }) => {
           color = "success",
           text = b.quality,
           magnet_url,
+          type,
           hash,
         } = b;
         return (
@@ -22,6 +23,7 @@ export const Button = ({ btns }) => {
             color={color}
           >
             {text}
+            {mode == 1 && " " + type}
           </Btn>
         );
       })}

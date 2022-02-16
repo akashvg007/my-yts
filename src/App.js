@@ -40,7 +40,7 @@ function App() {
       <header className="App-header">
         <div>YTS</div>
         <div className="search">
-          <form onSubmit={search} action="#">
+          <form onSubmit={search} action="#" autoComplete="off">
             <OutlinedInput
               id="outlined-adornment-amount"
               value={value}
@@ -82,7 +82,7 @@ function App() {
             <div className="heading">{"Download Links"}</div>
           </div>
           <section>
-            <Button btns={selected?.torrents} />
+            <Button mode={1} btns={selected?.torrents} />
           </section>
         </aside>
         <section>
